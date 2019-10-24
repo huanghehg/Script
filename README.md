@@ -1,6 +1,5 @@
 ### header_change
 
-
 主要功能：修改xcode 项目头文件引用的脚本
 
 执行环境：python2.7
@@ -36,5 +35,25 @@ git@git.xxx.net:group3/appdemo3.git
 6. 找出不属于当前库文件
 7. 去`Pods`路径下匹配库名，建立文件名与库名`map`
 8. 遍历文件将引号引用替换为`<库名/文件>`
+9. 替换完成，会将`feature/change_header`分支提交推送
 
 ps：写的时候时间比较紧迫，没有在意python版本^_^，方法也比较暴力，因为是一次性使用脚本，没怎么考虑执行效率，有需要的可以自行修改
+
+### ipa_server
+
+主要功能：提供持续化集成中打包平台的服务端接口
+
+执行环境：python3.x
+
+包管理工具：pip
+
+依赖库：json, os, zipfile, plistlib, sys, re, pymysql, uuid, shutil, time, flask, flask_cors
+
+使用方法：
+
+1. 配置ssl证书
+2. 启动Apache、https
+3. 接收jenkins 打包的ipa，生成plist文件，将信息写入数据库
+
+ps：代码没有分模块，没有拆分，没有加异常判断
+
