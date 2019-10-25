@@ -1,4 +1,4 @@
-### header_change
+### [header_change](https://huanghehg.github.io/2019/09/28/import/)
 
 主要功能：修改xcode 项目头文件引用的脚本
 
@@ -39,7 +39,7 @@ git@git.xxx.net:group3/appdemo3.git
 
 ps：写的时候时间比较紧迫，没有在意python版本^_^，方法也比较暴力，因为是一次性使用脚本，没怎么考虑执行效率，有需要的可以自行修改
 
-### ipa_server
+### [ipa_server](https://huanghehg.github.io/2019/10/18/site-for-ipa-download/)
 
 主要功能：提供持续化集成中打包平台的服务端接口
 
