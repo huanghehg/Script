@@ -57,3 +57,27 @@ ps：写的时候时间比较紧迫，没有在意python版本^_^，方法也比
 
 ps：代码没有分模块，没有拆分，没有加异常判断
 
+### internet_worm
+微信公众号爬虫脚本
+```
+headers = {
+    'User-Agent': "xxxxxx",
+    'Cookie': "xxxxx"
+}
+params = {
+	'action':"getmsg",
+	'__biz':"xxxx",
+	"f":"json",
+	"is_ok":"1",
+	"scene":"124",
+	"uin":"xxxx",
+	"key":"xxxxx",
+	"pass_ticket":"xxxx",
+	"appmsg_token":"xxxxx",
+	"x5":"0",
+	"offset":"0",
+	"count":"10"
+}
+```
+使用`charles`抓取公众号文章列表，将上面`xxxx`修改为对应的配置
+
